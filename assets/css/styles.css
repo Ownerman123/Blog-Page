@@ -27,12 +27,25 @@ header {
     justify-content: space-around;
     align-content: center;
 }
+header div {
+    display: flex;
+    align-content: center;
+}
 h1 {
     font-size: 4rem;
     margin: .2rem;
 }
-#dark-light {
+#Theme-checker {
     align-self: center;
+    display: inline-block;
+    width: 25%;
+    height: 25%;
+}
+#Theme-checker-label {
+    align-self: center;
+    display: inline-block;
+    
+    
 }
 
 form {
