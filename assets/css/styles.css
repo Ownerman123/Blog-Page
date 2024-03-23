@@ -1,0 +1,122 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+
+}
+body {
+    margin: 0%;
+    
+}
+:root { 
+
+    --darkback: #030637;
+    --darksubback: #3C0753;
+    --darkheadtext: #FB6D48;
+    --darktext: #910A67;
+    --darkheadback: #720455;
+
+    --lightback: #ffffe8;
+    --lightsubback: #FFFEC4;
+    --lightheadtext: #FF9B9B;
+    --lighttext: #CBFFA9;
+    --lightheadback: #CBFFA9;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+h1 {
+    font-size: 4rem;
+    margin: .2rem;
+}
+#dark-light {
+    align-self: center;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: fit-content;
+    padding: .2rem;
+    border-radius: 4px;
+    margin: 2rem;
+    justify-content: flex-start;
+    font-size: 3rem;
+}
+.input-group {
+    padding: 1rem;
+    flex: 1 0 75%;
+}
+
+
+input {
+
+    width: 100%;
+    height: 3rem;
+    
+    
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+/* Dark Theme styling */
+
+.dark {
+    background-color: var(--darkback);
+    color: var(--darktext);
+}
+.dark header{
+    background-color: var(--darkheadback);
+    color: var(--darkheadtext);
+}
+.dark form {
+
+    border: 1rem dashed var(--darkheadtext);
+}
+
+.dark input {
+
+    border-radius: 5px;
+    color: var(--darktext);
+    
+    background-color: var(--darksubback);
+}
+
+.dark ::placeholder {
+    color: var(--darkheadtext);
+    opacity: 1;
+}
+
+/* Light theme styling */
+
+.light {
+    background-color: var(--lightback);
+    color: var(--lighttext);
+}
+.light header{
+    background-color: var(--lightheadback);
+    color: var(--lightheadtext);
+}
+.light form {
+
+    border: 1rem dashed var(--lightheadtext);
+}
+
+.light input {
+
+    border-radius: 5px;
+    color: var(--lighttext);
+    
+    background-color: var(--lightsubback);
+}
+
+.light ::placeholder {
+    color: var(--lightheadtext);
+    opacity: 1;
+}

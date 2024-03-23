@@ -3,25 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/form.css">
     <title>Blogna</title>
 </head>
-<body>
+<body class="page dark">
     <header>
         <h1>Blogna</h1>
+        <input type="checkbox" name="Dark-light" id="dark-light">
     </header>
     <main>
         <form method="POST">
-            <div class="input-group">
+            <div class="input-group" >
                 <label for="username">Username</label>
-                <input type="text" name="username" id="username" placeholder="Username123">
+                <input class="text-input" type="text" name="username" id="username" placeholder="Username123">
             </div>
             <div class="input-group">
                 <label for="">Title</label>
-                <input type="text" name="title" id="title" placeholder="Post title">
+                <input class="text-input" type="text" name="title" id="title" placeholder="Post title">
             </div>
             <div class="input-group">
                 <label for="username">Post Content</label>
-                <input type="text" name="content" id="content" placeholder="Your post content...">
+                <input class="text-input" type="text" name="content" id="content" placeholder="Your post content...">
             </div>
             <a href="blog.html">
                 <button id="submit-btn" >Submit post</button>
@@ -34,5 +37,6 @@
         <a href="blog.html">Go to post page</a>
     </footer>
     <script src= "assets/js/form.js"></script>
+    <script src="assets/js/logic.js"></script>
 </body>
 </html>
