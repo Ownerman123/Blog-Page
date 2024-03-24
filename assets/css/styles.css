@@ -77,7 +77,13 @@ input {
 
 footer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    align-content: center;
+    height: 5rem;
+}
+footer p {
+    margin: 0px 10px;
 }
 
 /* Dark Theme styling */
