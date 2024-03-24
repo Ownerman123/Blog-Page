@@ -135,6 +135,14 @@ position: relative;
     color: var(--darkposttext);
 }
 
+.dark footer a {
+    color: var(--darktext);
+}
+
+.dark footer a:visited {
+    color: var(--darktext);
+}
+
 /* Light theme styling */
 
 .light {
@@ -171,4 +179,12 @@ position: relative;
 }
 .light .post p {
     color: var(--lightposttext)
+}
+
+.light footer a {
+    color: var(--lighttext);
+}
+
+.light footer a:visited {
+    color: var(--lighttext);
 }

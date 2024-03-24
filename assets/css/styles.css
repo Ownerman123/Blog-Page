@@ -119,6 +119,14 @@ footer p {
     opacity: 1;
 }
 
+.dark footer a {
+    color: var(--darktext);
+}
+
+.dark footer a:visited {
+    color: var(--darktext)
+}
+
 /* Light theme styling */
 
 .light {
@@ -151,4 +159,12 @@ footer p {
 .light ::placeholder {
     color: var(--lightheadtext);
     opacity: 1;
+}
+
+.light footer a {
+    color: var(--lighttext);
+}
+
+.light footer a:visited {
+    color: var(--lighttext);
 }
