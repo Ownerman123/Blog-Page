@@ -13,12 +13,14 @@ body {
     --darkheadtext: #FB6D48;
     --darktext: #910A67;
     --darkheadback: #720455;
-
-    --lightback: #ffffe8;
+   
+    --lightback: #fffff5;
     --lightsubback: #FFFEC4;
-    --lightheadtext: #FF9B9B;
-    --lighttext: #CBFFA9;
-    --lightheadback: #CBFFA9;
+    --lightpostback: #fffeaa;
+    --lightheadtext: #f74848;
+    --lighttext: #5b9e2f;
+    --lightposttext: #2e7300;
+    --lightheadback: #66ff00;
 }
 
 header {
@@ -88,6 +90,11 @@ footer {
     background-color: var(--darkheadback);
     color: var(--darkheadtext);
 }
+.dark header a , .dark header a:visited {
+    color: var(--darkheadtext);
+    text-decoration: none;
+    
+}
 .dark form {
 
     border: 1rem dashed var(--darkheadtext);
@@ -115,6 +122,12 @@ footer {
 .light header{
     background-color: var(--lightheadback);
     color: var(--lightheadtext);
+}
+
+.light header a , .light header a:visited {
+    color: var(--lightheadtext);
+    text-decoration: none;
+    
 }
 .light form {
 

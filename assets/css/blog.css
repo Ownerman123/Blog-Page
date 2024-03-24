@@ -1,0 +1,163 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+
+}
+body {
+    margin: 0%;
+    
+}
+:root { 
+
+    --darkback: #030637;
+    --darksubback: #3C0753;
+    --darkpostback: #560b76;
+    --darkheadtext: #FB6D48;
+    --darkposttext: #fb5126;
+    --darktext: #910A67;
+    --darkheadback: #720455;
+
+    --lightback: #fffff5;
+    --lightsubback: #FFFEC4;
+    --lightpostback: #fffeaa;
+    --lightheadtext: #f74848;
+    --lighttext: #5b9e2f;
+    --lightposttext: #2e7300;
+    --lightheadback: #66ff00;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+header div {
+    display: flex;
+    align-content: center;
+}
+h1 {
+    font-size: 4rem;
+    margin: .2rem;
+}
+#Theme-checker {
+    align-self: center;
+    display: inline-block;
+    width: 25%;
+    height: 25%;
+}
+#Theme-checker-label {
+    align-self: center;
+    display: inline-block;
+    
+    
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+.post {
+position: relative;
+    margin: .5rem;
+    margin-top: 3rem;
+    border-radius: 3px;
+
+}
+.post h2 {
+    position: absolute;
+    left: 1rem;
+    /* bottom: 100%; */
+    top: -2.9rem;
+    padding: .2rem .5rem;
+    margin-bottom: 0%;
+    border-radius: 3px;
+
+}
+.post h4 {
+    position: absolute;
+    right: 2rem;
+    bottom: 0rem;
+    padding-right: .3rem;
+    margin: 0%;
+    border-radius: 1px;
+}
+.post p {
+    margin-left: 1rem;
+}
+
+/* Dark Theme styling */
+
+.dark {
+    background-color: var(--darkback);
+    color: var(--darktext);
+}
+.dark header{
+    background-color: var(--darkheadback);
+    color: var(--darkheadtext);
+}
+
+.dark header a , .dark header a:visited {
+    color: var(--darkheadtext);
+    text-decoration: none;
+    
+}
+
+.dark .post {
+    background-color: var(--darkpostback);
+    border: .2rem solid var(--darkheadtext);
+}
+.dark .post h2 {
+    border: .2rem solid var(--darkheadtext);
+    color: var(--darkheadtext);
+    background-color: var(--darkheadback);
+}
+.dark .post h4 {
+
+    border: .1rem solid var(--darkheadtext);
+    color:var(--darkheadtext) ;
+    background-color: var(--darkheadback);
+
+}
+ 
+.dark .post p {
+
+    color: var(--darkposttext);
+}
+
+/* Light theme styling */
+
+.light {
+    background-color: var(--lightback);
+    color: var(--lighttext);
+}
+.light header{
+    background-color: var(--lightheadback);
+    color: var(--lightheadtext);
+}
+
+.light header a , .light header a:visited {
+    color: var(--lightheadtext);
+    text-decoration: none;
+    
+}
+
+.light .post {
+
+    background-color: var(--lightpostback);
+    border: .2rem solid var(--lightheadtext);
+}
+.light .post h2 {
+    border: .2rem solid var(--lightheadtext);
+    color: var(--lightheadtext);
+    background-color: var(--lightheadback);
+}
+.light .post h4 {
+
+    border: .1rem solid var(--lightheadtext);
+    color:var(--lightheadtext) ;
+    background-color: var(--lightheadback);
+
+}
+.light .post p {
+    color: var(--lightposttext)
+}
