@@ -11,7 +11,7 @@ To change the theme to dark mode simply click the check box labled "dark mode?",
 
 ## Deployed application
 
-
+https://ownerman123.github.io/Blog-Page/
 
 ## ScreenShots
 
