@@ -10,7 +10,10 @@ function createblogobj(event)
     if(usernameInput.value !== ''
         && titleInput.value !== '' &&
         contentInput.value!== ''){
-
+            if(titleInput.value.length > 45) {
+                alert("your title can not be more than 45 characters long");
+                return;
+            }
     const blogobj = {
         username: usernameInput.value,
         title: titleInput.value,
@@ -18,7 +21,7 @@ function createblogobj(event)
     }
     addPostToStorage(blogobj);
     window.location.href="./blog.html";
-    return blogobj;
+    
     }else{
         alert("Please fill in all fields before posting")
         
